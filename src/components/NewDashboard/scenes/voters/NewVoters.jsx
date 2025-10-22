@@ -34,7 +34,7 @@ const Team = () => {
   });
   const colors = tokens(theme.palette.mode);
 
-  // ✅ Fetch voters
+  //  Fetch voters
   const fetchVoters = async () => {
     try {
       const res = await axios.get(`${BASE_URL}/api/voters`);
@@ -48,7 +48,7 @@ const Team = () => {
     fetchVoters();
   }, []);
 
-  // ✅ Delete voter
+  //  Delete voter
   const deleteVoter = async (id) => {
     try {
       await axios.delete(`${BASE_URL}/deleteVoter/${id}`);
@@ -58,13 +58,13 @@ const Team = () => {
     }
   };
 
-  // ✅ Open edit dialog with data
+  //  Open edit dialog with data
   const handleEditOpen = (voter) => {
     setEditData(voter);
     setOpen(true);
   };
 
-  // ✅ Update voter
+  //  Update voter
   const handleEditSave = async () => {
     try {
       await axios.put(`${BASE_URL}/updateVoter/${editData._id}`, editData);
@@ -75,7 +75,7 @@ const Team = () => {
     }
   };
 
-  // ✅ Restored working image display logic
+  //  Restored working image display logic
   const columns = [
     {
       field: "image",
@@ -165,7 +165,7 @@ const Team = () => {
               </Box>
             </Box>
 
-            {/* ✅ Edit Dialog */}
+            {/*  Edit Dialog */}
             <Dialog open={open} onClose={() => setOpen(false)}>
               <DialogTitle>Edit Voter</DialogTitle>
               <DialogContent>

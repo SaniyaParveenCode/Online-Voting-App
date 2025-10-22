@@ -91,7 +91,7 @@ export default function CustomizedTables() {
         }));
         setCandidates(processedCandidates);
       })
-      .catch(err => console.error("❌ Error fetching candidates:", err));
+      .catch(err => console.error(" Error fetching candidates:", err));
   }, []);
 
   // Fetch voter details
@@ -99,13 +99,13 @@ export default function CustomizedTables() {
     if (!voterId) return;
     axios.get(`${BASE_URL}/api/voters/${voterId}`)
       .then(response => setVoter(response.data?.voter || null))
-      .catch(err => console.error("❌ Error fetching voter:", err));
+      .catch(err => console.error(" Error fetching voter:", err));
   }, [voterId]);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  // ✅ Corrected vote handler
+  //  Corrected vote handler
   const handleVote = (candidateId) => {
     if (!voter) return alert("Voter not found");
     if (voter.voterStatus === "Voted") return alert("You have already voted!");
@@ -116,7 +116,7 @@ export default function CustomizedTables() {
         handleOpen();
       })
       .catch(err => {
-        console.error("❌ Error voting:", err);
+        console.error(" Error voting:", err);
         alert("Error submitting vote!");
       });
   };

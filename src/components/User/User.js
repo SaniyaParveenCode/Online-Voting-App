@@ -23,7 +23,7 @@ const User = () => {
         setSingleVoter(res.data.voter);
       }
     } catch (err) {
-      console.error("❌ Error fetching voter:", err);
+      console.error(" Error fetching voter:", err);
     }
   };
 
@@ -39,11 +39,11 @@ const User = () => {
           if (res.data && res.data.voters && res.data.voters.length > 0) {
             voterId = res.data.voters[0]._id;
             Cookies.set("myCookie", voterId, { path: "/", expires: 7 });
-            console.log("✅ Auto-set myCookie:", voterId);
+            console.log(" Auto-set myCookie:", voterId);
             fetchVoter(voterId);
           }
         })
-        .catch((err) => console.error("❌ Error fetching voters list:", err));
+        .catch((err) => console.error(" Error fetching voters list:", err));
     }
   }, []);
 
@@ -113,7 +113,7 @@ const User = () => {
           <UserCard voter={singleVoter} />
         </div>
 
-        {/* Right: intro */}
+        {/*  intro */}
         <div className="details" ref={revealRefRight}>
           <h2>
             Welcome to <span>Online Voting Platform</span>

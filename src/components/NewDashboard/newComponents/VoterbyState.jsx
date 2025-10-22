@@ -29,7 +29,6 @@ const VoterbyState = () => {
   useEffect(() => {
     const fetchVoterData = async () => {
       try {
-        // Correct endpoint to match backend
         const response = await axios.get(`${BASE_URL}/api/voters`);
         const voters = response.data.voters || [];
         const groupedData = groupVotersByState(voters);

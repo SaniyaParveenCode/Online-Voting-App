@@ -32,7 +32,7 @@ const NewCandidates = () => {
           console.error("Invalid response format:", res.data);
         }
       } catch (error) {
-        console.error("❌ Error fetching candidates:", error.message);
+        console.error(" Error fetching candidates:", error.message);
       } finally {
         setLoading(false);
       }
@@ -47,16 +47,14 @@ const NewCandidates = () => {
       await axios.delete(`${BASE_URL}/api/candidates/${id}`);
       setCandidates((prev) => prev.filter((c) => c._id !== id));
     } catch (error) {
-      console.error("❌ Error deleting candidate:", error.message);
+      console.error(" Error deleting candidate:", error.message);
     }
   };
 
-  // Edit candidate (redirect)
   const editCandidate = (id) => {
     window.location.href = `/edit-candidate/${id}`;
   };
 
-  // Columns setup
   const columns = [
     {
       field: "image",

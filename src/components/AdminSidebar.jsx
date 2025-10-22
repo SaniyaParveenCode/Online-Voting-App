@@ -47,7 +47,7 @@ const AdminDashboard = () => {
 
         setDashboard({ voterCount, candidateCount, votersVoted, votesCast });
       } catch (err) {
-        console.error("❌ Error fetching dashboard data:", err);
+        console.error(" Error fetching dashboard data:", err);
       } finally {
         setLoading(false);
       }

@@ -58,7 +58,7 @@ const normalizeImageUrl = (req, url) =>
 
 // Health check
 app.get("/", (req, res) =>
-  res.json({ success: true, message: "✅ Online Voting Backend Running..." })
+  res.json({ success: true, message: " Online Voting Backend Running..." })
 );
 
 // Profile routes
@@ -128,7 +128,7 @@ const createVoterHandler = async (req, res) => {
     await voter.save();
     res.json({ success: true, message: "Registration successful", voter });
   } catch (err) {
-    console.error("❌ Registration error:", err);
+    console.error(" Registration error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 };
@@ -159,7 +159,7 @@ app.post(`${API_ROOT}/voters/login`, async (req, res) => {
 
     res.json({ success: true, message: "Login successful", voter });
   } catch (err) {
-    console.error("❌ Voter login error:", err);
+    console.error(" Voter login error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
@@ -187,7 +187,7 @@ app.post(`${API_ROOT}/admin/login`, async (req, res) => {
 
     res.json({ success: true, message: "Login successful", admin });
   } catch (err) {
-    console.error("❌ Admin login error:", err);
+    console.error(" Admin login error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
@@ -209,7 +209,7 @@ app.get(`${API_ROOT}/admin/create`, async (req, res) => {
 
     res.send({ success: true, message: "Admin created successfully!" });
   } catch (err) {
-    console.error("❌ Create admin error:", err);
+    console.error(" Create admin error:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
@@ -243,12 +243,12 @@ app.get(`${API_ROOT}/voters/:id`, async (req, res) => {
       voter: { ...voter.toObject(), image: normalizeImageUrl(req, voter.image) },
     });
   } catch (err) {
-    console.error("❌ Error fetching voter:", err);
+    console.error(" Error fetching voter:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
 
-// ✅ -------- UPDATE VOTER --------
+//  -------- UPDATE VOTER --------
 app.put(`${API_ROOT}/voters/:id`, upload.single("image"), async (req, res) => {
   try {
     const { id } = req.params;
@@ -274,12 +274,12 @@ app.put(`${API_ROOT}/voters/:id`, upload.single("image"), async (req, res) => {
       },
     });
   } catch (err) {
-    console.error("❌ Error updating voter:", err);
+    console.error(" Error updating voter:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
 
-// ✅ -------- DELETE VOTER --------
+//  -------- DELETE VOTER --------
 app.delete(`${API_ROOT}/voters/:id`, async (req, res) => {
   try {
     const deletedVoter = await Voter.findByIdAndDelete(req.params.id);
@@ -290,7 +290,7 @@ app.delete(`${API_ROOT}/voters/:id`, async (req, res) => {
 
     res.json({ success: true, message: "Voter deleted successfully" });
   } catch (err) {
-    console.error("❌ Error deleting voter:", err);
+    console.error(" Error deleting voter:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
@@ -390,7 +390,7 @@ app.put(
         },
       });
     } catch (err) {
-      console.error("❌ Error updating candidate:", err);
+      console.error(" Error updating candidate:", err);
       res.status(500).json({ success: false, message: "Server error" });
     }
   }
@@ -407,7 +407,7 @@ app.delete(`${API_ROOT}/candidates/:id`, async (req, res) => {
 
     res.json({ success: true, message: "Candidate deleted successfully" });
   } catch (err) {
-    console.error("❌ Error deleting candidate:", err);
+    console.error(" Error deleting candidate:", err);
     res.status(500).json({ success: false, message: "Server error" });
   }
 });
@@ -470,9 +470,9 @@ app.get(`${API_ROOT}/dashboard`, async (req, res) => {
 mongoose
   .connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
-    console.log("✅ MongoDB connected");
+    console.log(" MongoDB connected");
     app.listen(PORT, () =>
-      console.log(`✅ Server running at http://localhost:${PORT}`)
+      console.log(` Server running at http://localhost:${PORT}`)
     );
   })
-  .catch((err) => console.error("❌ Database connection error:", err));
+  .catch((err) => console.error(" Database connection error:", err));

@@ -23,17 +23,17 @@ const Login = () => {
   const handleLogin = async () => {
     setLoading(true);
     try {
-      // ✅ Correct backend route
+
       const response = await axios.post("http://localhost:8080/api/voters/login", {
         email: email.trim(),
         password: pass.trim(),
       });
 
-      // ✅ Correct key name from backend
+    
       const voterst = response.data.voter;
 
       if (response.data.success) {
-        // ✅ Set cookie manually
+   
         document.cookie = `myCookie=${voterst._id}; path=/; max-age=${24 * 60 * 60}`;
 
         loginSuccess();

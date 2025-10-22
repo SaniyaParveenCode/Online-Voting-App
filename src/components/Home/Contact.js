@@ -23,7 +23,6 @@ const Contact = () => {
       return;
     }
 
-    // ✅ Matches your EmailJS template variables:
     const templateParams = {
       user_name: name,
       user_email: email,
@@ -32,10 +31,10 @@ const Contact = () => {
 
     try {
       const response = await emailjs.send(
-        'service_rs54t1c',        // ✅ your new Gmail service ID
-        'template_yhjz63q',       // your existing template ID
+        'service_rs54t1c',       
+        'template_yhjz63q',       
         templateParams,
-        'bkJ7k5VmhNoPw0eVb'       // your EmailJS public key
+        'bkJ7k5VmhNoPw0eVb'       
       );
 
       console.log('SUCCESS!', response.status, response.text);
