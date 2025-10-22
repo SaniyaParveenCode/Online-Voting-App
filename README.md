@@ -32,43 +32,32 @@ This application provides a secure, transparent, and user-friendly platform for 
 
 ## Screenshots
 
-### Homepage
+## Homepage
+![Homepage](./assets/Homepage.jpg)
 
-![Homepage](assets/Homepage.jpg)
+## Candidates Page
+![Candidates](./assets/Candidates.jpg)
 
-### Candidates Page
+## Voter Stats
+![Voter Stats](./assets/VotersStateAge.jpg)
 
-![Candidates](assets/Candidates.jpg)
+## Welcome Screen
+![Welcome](./assets/Welcome.jpg)
 
-### Voter Statistics
+## Voter Registration
+![Voter Registration](./assets/Voter.jpg)
 
-![Voter Stats](assets/VotersStateAge.jpg)
+## Mongo Compass Setup
+![Mongo Compass](./assets/MongoCompass.jpg)
 
-### Welcome Screen
+## Sign In
+![Sign In](./assets/Sign.jpg)
 
-![Welcome](assets/Welcome.jpg)
+## Admin Dashboard
+![Admin Dashboard](./assets/Admin.jpg)
 
-### Voter Registration
-
-![Voter Registration](assets/Voter.jpg)
-
-### MongoDB Compass Setup
-
-![Mongo Compass](assets/MongoCompass.jpg)
-
-### Sign In Page
-
-![Sign In](assets/Sign.jpg)
-
-### Admin Dashboard
-
-![Admin Dashboard](assets/Admin.jpg)
-
-### Admin Candidate Management
-
-![Admin Candidate](assets/AdminCandidate.jpg)
-
----
+## Admin Candidate Page
+![Admin Candidate](./assets/AdminCandidate.jpg)
 
 ## Getting Started
 
