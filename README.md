@@ -1,73 +1,130 @@
-**VoteForge**
+# Online Voting System
 
-VoteForge is a secure and interactive online voting platform built with **React, Node.js, Express, and MongoDB**. The platform allows users to participate in elections, polls, and surveys in real-time while ensuring data privacy and integrity.
+An enterprise-grade **Online Voting System** built with the **MERN Stack (MongoDB, Express.js, React.js, Node.js)**.
+This application provides a secure, transparent, and user-friendly platform for conducting online elections, polls, and surveys.
 
+---
 
-**Features**
+## Key Features
 
-User Authentication: Secure login and registration system using JWT.
+* **User Authentication** – Secure login and registration using JWT.
+* **Voting Dashboard** – Interactive dashboard to track active and upcoming elections.
+* **Voting Interface** – Simple and intuitive interface for casting votes.
+* **Admin Panel** – Manage candidates, voters, and monitor live voting activity.
+* **Real-time Updates** – WebSocket integration for instant result updates.
+* **Data Security** – Implements encryption and data integrity protection.
+* **Responsive UI** – Modern design built with Material UI for a seamless experience on all devices.
 
-Voting Dashboard: Interactive dashboard to view ongoing and upcoming polls.
+---
 
-Voting Interface: Easy-to-use interface to cast votes.
+## Technologies Used
 
-Admin Panel: Create, manage, and monitor voting events.
+| Category                    | Technologies                     |
+| --------------------------- | -------------------------------- |
+| **Frontend**                | React.js, Material UI            |
+| **Backend**                 | Node.js, Express.js              |
+| **Database**                | MongoDB                          |
+| **Authentication**          | JSON Web Tokens (JWT), bcrypt.js |
+| **Real-time Communication** | WebSocket                        |
+| **Hosting**                 | Netlify / Render / MongoDB Atlas |
 
-Real-time Updates: Instant vote count updates using WebSocket.
+---
 
-Data Security: Measures in place to protect user data and results.
+## Screenshots
 
+### Homepage
 
-**Technologies Used**
+![Homepage](assets/Homepage.jpg)
 
-Frontend: React.js
+### Candidates Page
 
-Backend: Node.js, Express.js
+![Candidates](assets/Candidates.jpg)
 
-Database: MongoDB
+### Voter Statistics
 
-Authentication: JSON Web Tokens (JWT)
+![Voter Stats](assets/VotersStateAge.jpg)
 
-Real-time Communication: WebSocket
+### Welcome Screen
 
-UI Framework: Material-UI
+![Welcome](assets/Welcome.jpg)
 
-**Getting Started**
+### Voter Registration
 
-To run VoteForge locally:
+![Voter Registration](assets/Voter.jpg)
 
-1.Clone the repository 
-git clone https://github.com/SaniyaParveenCode/VoteForge.git
-cd VoteForge
+### MongoDB Compass Setup
 
-2.Install dependencies
+![Mongo Compass](assets/MongoCompass.jpg)
+
+### Sign In Page
+
+![Sign In](assets/Sign.jpg)
+
+### Admin Dashboard
+
+![Admin Dashboard](assets/Admin.jpg)
+
+### Admin Candidate Management
+
+![Admin Candidate](assets/AdminCandidate.jpg)
+
+---
+
+## Getting Started
+
+Follow these steps to set up the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/gurneeshs/Online-Voting-System.git
+
+# Navigate to the project directory
+cd Online-Voting-System
+
+# Install server dependencies
 cd server
 npm install
+
+# Install client dependencies
 cd ../client
 npm install
 
-3.Configure environment variables
-Create a .env file in the server directory and add:
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+# Configure environment variables
+# (Create .env file inside /server)
+# Example:
+# MONGO_URI=your_mongo_connection_string
+# JWT_SECRET=your_secret_key
 
-4.Start the server
-cd server
+# Run the server
 npm start
 
-5.Start the client
+# Run the client
 cd ../client
 npm start
+```
 
-6.Open your browser
-Navigate to http://localhost:3000 to access the application.
+---
 
+## Contributing
 
-**Author**
+Contributions are welcome!
+To contribute:
 
-Developed by Sheikh Saniya Parveen
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m "Add new feature"`)
+4. Push to your branch (`git push origin feature-name`)
+5. Create a Pull Request
 
+---
 
-**License**
+## License
 
-This project is for educational and portfolio purposes.
+This project is licensed under the **MIT License**.
+Feel free to use and modify it for educational or professional purposes.
+
+---
+
+## Contact
+
+For any queries or collaborations, please reach out via GitHub Issues or Discussions.
