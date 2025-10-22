@@ -5,6 +5,38 @@ This system allows users to participate in **elections, polls, surveys**, and mo
 
 ---
 
+## Screenshots
+
+### Homepage
+![Homepage](assets/Homepage.jpg)
+
+### Welcome Page
+![Welcome Page](assets/Welcome.jpg)
+
+### Registration / Sign Up
+![Sign Up](assets/Sign.jpg)
+
+### Voter Dashboard
+![Voter Dashboard](assets/Voter.jpg)
+
+### Voters by State & Age
+![Voters State Age](assets/VotersStateAge.jpg)
+
+### Admin Dashboard
+![Admin Page](assets/Admin.jpg)
+
+### Admin Candidate Management
+![Admin Candidate](assets/AdminCandidate.jpg)
+
+### Candidates Page
+![Candidates](assets/Candidates.jpg)
+
+### Mongo Compass
+![Mongo Compass](assets/MongoCompass.jpg)
+
+---
+
+
 ## Features
 
 - **User Authentication:** Secure login and authorization using JWT.  
