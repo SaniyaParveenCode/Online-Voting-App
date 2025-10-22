@@ -1,0 +1,82 @@
+/* Main Navbar */
+.Nav {
+  width: 100%;
+  padding: 0.8rem 1.5rem;      
+  font-size: 1.1rem;            
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black !important;
+  color: #89c4ee !important;
+
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  border-radius: 0;
+}
+
+/* Toggle button */
+.Toggle {
+  margin: 0;
+  padding: 0.2rem;
+  background-color: #89c4ee;
+  cursor: pointer;
+}
+
+/* Admin Navbar */
+.AdminNav {
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+  color: #89c4ee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Heading / Brand */
+.Heading {
+  font-weight: bold;
+  font-size: 1.5rem;         
+  color: #89c4ee;
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+}
+.Heading:hover {
+  color: #89c4ee;
+}
+
+/* Nav items container (right side links) */
+.Nav-items-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;          
+  margin-left: auto;    
+}
+
+/* Individual nav items */
+.Nav-items {
+  margin: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;       
+  border-radius: 0.5rem;
+  color: #89c4ee;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.Nav-items:hover {
+  background-color: #89c4ee;
+  color: black;
+}
+
+/* Buttons inside nav items */
+.Nav-items button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #89c4ee;
+  cursor: pointer;
+}
+.Nav-items button:hover {
+  color: black;
+}

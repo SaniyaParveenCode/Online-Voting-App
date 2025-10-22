@@ -1,0 +1,60 @@
+.User{
+    background-color: black;
+    overflow-x: hidden;
+}
+.User .Heading2{
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+}
+.User .Heading2 h3{
+    color:white;
+}
+.User .Heading2 h3 span{
+    color:#89c4ee;
+    font-weight: bold;
+}
+.userPage{
+    margin: 1rem 0rem;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.userDetails{
+ 
+    margin: 1rem;
+    
+}
+
+.userDetails img {
+    width: 150px;           
+    height: 150px;
+    border-radius: 8px;    
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem;   
+}
+
+h3{
+
+}
+
+.details{
+    margin: 1rem;
+    color:white;
+}
+.details h2{
+    color:white;
+
+}
+.details p{
+    text-align: justify;
+}
+
+@media (max-width: 1024px) {
+    .userPage{
+        margin: 1rem 0rem;
+        display: block;
+    }
+}
