@@ -87,7 +87,7 @@ npm start
 5.cd ../client
 npm start
 
-#Contributing
+###Contributing
 
 Contributions are welcome!
 
